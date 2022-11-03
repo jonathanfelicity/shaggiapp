@@ -1,0 +1,706 @@
+{% extends 'layout.html' %}
+
+
+
+
+
+{% block content %}
+<section class="bg-img pt-200 pb-120" data-overlay="7" style="background-image: url(http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/banners/banner-1.jpg); background-position: top center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center mt-80">
+                    <h1 class="box-title text-white fs-50 mb-30">Buy & Sell 100+ coins instantly</h1>	
+                </div>
+                <div class="text-center d-flex gap-3 justify-content-center">
+                    <a href="#" class="btn btn-outline btn-primary text-white">Visit Exchange</a>
+                    <a href="#" class="btn btn-primary">Sign Up Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>	
+<section class="overflow-xh" data-aos="fade-up">		
+    <div class="row">
+        <div class="col-12">
+            <div class="box">
+              <div class="box-body">
+                  <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                      <div class="tradingview-widget-container__widget"></div>
+                      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                      {
+                      "symbols": [
+                        {
+                          "proName": "BITSTAMP:BTCUSD",
+                          "title": "BTC/USD"
+                        },
+                        {
+                          "proName": "BITSTAMP:ETHUSD",
+                          "title": "ETH/USD"
+                        },
+                        {
+                          "description": "BTC/USD",
+                          "proName": "BITBAY:BTCUSD"
+                        },
+                        {
+                          "description": "XRP/USD",
+                          "proName": "BITSTAMP:XRPUSD"
+                        },
+                        {
+                          "description": "LTC/USD",
+                          "proName": "BINANCE:LTCUSDT"
+                        }
+                      ],
+                      "showSymbolLogo": true,
+                      "colorTheme": "light",
+                      "isTransparent": true,
+                      "displayMode": "adaptive",
+                      "locale": "in"
+                    }
+                      </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+<section class="pt-30 pb-50" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs justify-content-center bb-0 mb-10" role="tablist">
+                    <li class="nav-item"> <a class="nav-link px-50 py-10 fs-24 active" data-bs-toggle="tab" href="#all" role="tab">Buy Crypto</a> </li>
+                    <li class="nav-item"> <a class="nav-link px-50 py-10 fs-24" data-bs-toggle="tab" href="#tab1" role="tab">Sell Crypto</a> </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="all" role="tabpanel">
+                        <div class="px-15 pt-15">
+                            <div class="row">
+                              <div class="col-12 col-md-4">
+                                <div class="box box-body pull-up">
+                                  <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                      <div class="tradingview-widget-container__widget"></div>
+                                      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                      {
+                                      "symbol": "BITSTAMP:BTCUSD",
+                                      "width": "100%",
+                                      "height": "100%",
+                                      "locale": "in",
+                                      "dateRange": "12M",
+                                      "colorTheme": "light",
+                                      "trendLineColor": "rgba(246, 178, 107, 1)",
+                                      "underLineColor": "rgba(255, 242, 204, 1)",
+                                      "isTransparent": true,
+                                      "autosize": true,
+                                      "largeChartUrl": ""
+                                    }
+                                      </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+                                </div>			
+                              </div>
+                              <div class="col-12 col-md-4">
+                                <div class="box box-body pull-up">
+                                  <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                      <div class="tradingview-widget-container__widget"></div>
+                                      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                      {
+                                      "symbol": "BITSTAMP:ETHUSD",
+                                      "width": "100%",
+                                      "height": "100%",
+                                      "locale": "in",
+                                      "dateRange": "12M",
+                                      "colorTheme": "light",
+                                      "trendLineColor": "rgba(246, 178, 107, 1)",
+                                      "underLineColor": "rgba(255, 242, 204, 1)",
+                                      "isTransparent": true,
+                                      "autosize": true,
+                                      "largeChartUrl": ""
+                                    }
+                                      </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+                                </div>			
+                              </div>
+                              <div class="col-12 col-md-4">
+                                <div class="box box-body pull-up">
+                                  <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                      <div class="tradingview-widget-container__widget"></div>
+                                      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                      {
+                                      "symbol": "BINANCE:XRPUSDT",
+                                      "width": "100%",
+                                      "height": "100%",
+                                      "locale": "in",
+                                      "dateRange": "12M",
+                                      "colorTheme": "light",
+                                      "trendLineColor": "rgba(246, 178, 107, 1)",
+                                      "underLineColor": "rgba(255, 242, 204, 1)",
+                                      "isTransparent": true,
+                                      "autosize": true,
+                                      "largeChartUrl": ""
+                                    }
+                                      </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+                                </div>			
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab1" role="tabpanel">
+                        <div class="px-15 pt-15">
+                            <div class="row">
+                              <div class="col-12 col-md-4">
+                                <div class="box box-body pull-up">
+                                  <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                      <div class="tradingview-widget-container__widget"></div>
+                                      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                      {
+                                      "symbol": "BITSTAMP:BTCUSD",
+                                      "width": "100%",
+                                      "height": "100%",
+                                      "locale": "in",
+                                      "dateRange": "12M",
+                                      "colorTheme": "light",
+                                      "trendLineColor": "rgba(246, 178, 107, 1)",
+                                      "underLineColor": "rgba(255, 242, 204, 1)",
+                                      "isTransparent": true,
+                                      "autosize": true,
+                                      "largeChartUrl": ""
+                                    }
+                                      </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+                                </div>			
+                              </div>
+                              <div class="col-12 col-md-4">
+                                <div class="box box-body pull-up">
+                                  <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                      <div class="tradingview-widget-container__widget"></div>
+                                      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                      {
+                                      "symbol": "BITSTAMP:ETHUSD",
+                                      "width": "100%",
+                                      "height": "100%",
+                                      "locale": "in",
+                                      "dateRange": "12M",
+                                      "colorTheme": "light",
+                                      "trendLineColor": "rgba(246, 178, 107, 1)",
+                                      "underLineColor": "rgba(255, 242, 204, 1)",
+                                      "isTransparent": true,
+                                      "autosize": true,
+                                      "largeChartUrl": ""
+                                    }
+                                      </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+                                </div>			
+                              </div>
+                              <div class="col-12 col-md-4">
+                                <div class="box box-body pull-up">
+                                  <!-- TradingView Widget BEGIN -->
+                                    <div class="tradingview-widget-container">
+                                      <div class="tradingview-widget-container__widget"></div>
+                                      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                      {
+                                      "symbol": "BINANCE:XRPUSDT",
+                                      "width": "100%",
+                                      "height": "100%",
+                                      "locale": "in",
+                                      "dateRange": "12M",
+                                      "colorTheme": "light",
+                                      "trendLineColor": "rgba(246, 178, 107, 1)",
+                                      "underLineColor": "rgba(255, 242, 204, 1)",
+                                      "isTransparent": true,
+                                      "autosize": true,
+                                      "largeChartUrl": ""
+                                    }
+                                      </script>
+                                    </div>
+                                    <!-- TradingView Widget END -->
+                                </div>			
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-50 bg-white" data-aos="fade-up">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-12 text-center">
+                <h1 class="mb-15">Market Live</h1>					
+                <hr class="w-100 bg-primary">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="box box-body">
+                    <div style="height:433px; background-color: #FFFFFF; overflow:hidden; box-sizing: border-box; border: 1px solid #56667F; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #56667F; padding: 0px; margin: 0px; width: 100%;"><div style="height:413px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=full_v2&amp;theme=light&amp;cnt=6&amp;pref_coin_id=1505&amp;graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #FFFFFF; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io/" target="_blank" style="font-weight: 500; color: #FFFFFF; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
+                </div>
+            </div>
+        </div>						
+    </div>
+</section>
+
+<section class="py-50" data-aos="fade-up">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-12 text-center">
+                <h1 class="mb-15">Trade. Anywhere.</h1>					
+                <hr class="w-100 bg-primary">
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col-lg-4 col-12">
+                <div class="box mb-md-0">
+                    <div class="box-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3 class="box-title mb-0">Mobile</h3>
+                            <i class="fa fa-mobile fs-36 text-black-10"></i>
+                        </div>
+                        <p class="my-50">All the power of Binance's cryptocurrency exchange, in the palm of your hand. Download the Binance mobile crypto trading app today.</p>
+                        <div class="row justify-content-between">
+                            <div class="col-6">
+                                <a href="#"><img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/google-play.png" class="pull-up mb-20" alt="" /></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/and-apk.png" class="pull-up mb-20" alt="" /></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/app-store.png" class="pull-up" alt="" /></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/qr.png" class="pull-up" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="box mb-md-0">
+                    <div class="box-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3 class="box-title mb-0">Desktop</h3>
+                            <i class="fa fa-desktop fs-36 text-black-10"></i>
+                        </div>
+                        <p class="my-50">Powerful crypto trading platform for those who mean business. The Binance crypto trading experience, tailor-made for your Windows or MacOS device.</p>
+                        <div class="row justify-content-between">
+                            <div class="col-6">
+                                <a href="#"><img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/macos.png" class="pull-up mb-20" alt="" /></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/windows.png" class="pull-up mb-20" alt="" /></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/lunux.png" class="pull-up" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="box h-p100 mb-md-0">
+                    <div class="box-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3 class="box-title mb-0">API</h3>
+                            <i class="fa fa-plug fs-36 text-black-10"></i>
+                        </div>
+                        <p class="my-50">The Binance API is designed to provide an easy and efficient way to integrate your trading application into our platform.</p>
+                        <div class="row justify-content-between">
+                            <div class="col-12">
+                                <a href="#"><i class="fa fa-plug me-10"></i>Official API Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>						
+    </div>
+</section>
+
+<section class="py-50 overflow-xh" data-aos="fade-up">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-12 text-start">
+                <h6 class="sub-heading">Market Outlooks</h6>
+                <h1 class="mb-15">Analyze markets across 150+ countries</h1>					
+                <hr class="w-100 bg-primary ms-0">
+                
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item"> <a class="nav-link active fs-18 py-15" data-bs-toggle="tab" href="#home7" role="tab">Consumer Markets</a> </li>
+                    <li class="nav-item"> <a class="nav-link py-15 fs-18" data-bs-toggle="tab" href="#profile7" role="tab">Digital Markets</a> </li>
+                    <li class="nav-item"> <a class="nav-link py-15 fs-18" data-bs-toggle="tab" href="#messages7" role="tab">Mobility Markets</a> </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home7" role="tabpanel">
+                        <div class="py-15">
+                            <p class="fs-18 mb-20">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>								
+                            <div class="text-center d-flex gap-3 justify-content-start">
+                                <a href="#" class="btn btn-warning">Explore the tool</a>
+                                <a href="#" class="btn btn-outline btn-warning"> <i class="fa fa-youtube-play me-10"></i>Watch the tutorial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="profile7" role="tabpanel">
+                        <div class="py-15">
+                            <p class="fs-18 mb-20">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                            <div class="text-center d-flex gap-3 justify-content-start">
+                                <a href="#" class="btn btn-warning">Explore the tool</a>
+                                <a href="#" class="btn btn-outline btn-warning"> <i class="fa fa-youtube-play me-10"></i>Watch the tutorial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="messages7" role="tabpanel">
+                        <div class="py-15">
+                            <p class="fs-18 mb-20">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites</p>							
+                            <div class="text-center d-flex gap-3 justify-content-start">
+                                <a href="#" class="btn btn-warning">Explore the tool</a>
+                                <a href="#" class="btn btn-outline btn-warning"> <i class="fa fa-youtube-play me-10"></i>Watch the tutorial</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12 d-lg-block d-none">
+                <div class="browserMockup browserMockup--perspectiveRight ms-70 position-relative">
+                    <div class="browserMockup__addressBar">
+                        <span class="browserMockup__button"></span>
+                        <span class="browserMockup__button"></span>
+                        <span class="browserMockup__button"></span>
+                        <span class="browserMockup__addressInput"></span>
+                    </div>
+                    <span class="homeScreenshot  homeScreenshot--mmo" style="background-position-y: 0px;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-50 bg-white" data-aos="fade-up">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-12 text-center">
+                <h1 class="mb-15">Our complete solutions</h1>					
+                <hr class="w-100 bg-primary">
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col-lg-4 col-12">
+                <div class="box">
+                    <div class="box-body px-30 pt-50 pb-30">
+                        <div class="text-center mb-30">
+                            <h3 class="box-title mb-10">Basic Account</h3>
+                            <p>Get to know us</p>					
+                            <hr class="w-100 bg-primary">
+                        </div>
+                        <ul class="list list-hand">
+                            <li> Access to basic statistics</li>
+                            <li> Download as PDF & PNG</li>
+                        </ul>
+                    </div>
+                    <div class="box-footer bg-lightest min-h-80 l-h-60">
+                        <p class="text-center fs-22">Free</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="box">
+                    <div class="box-body px-30 pt-50 pb-30">
+                        <div class="text-center mb-30">
+                            <h3 class="box-title mb-10">Single Account</h3>
+                            <p>The ideal entry-level account for individual users</p>					
+                            <hr class="w-100 bg-primary">
+                        </div>
+                        <ul class="list list-hand">
+                            <li> Full access to all statistics</li>
+                            <li> Stand-alone license</li>
+                        </ul>
+                    </div>
+                    <div class="box-footer bg-lightest min-h-80 l-h-60">
+                        <p class="text-center fs-36">$39 <small class="fs-16 fw-300">/ month*</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="box">
+                    <div class="box-body px-30 pt-50 pb-30">
+                        <div class="text-center mb-30">
+                            <h3 class="box-title mb-10">Corporate Account</h3>
+                            <p>Our company solution</p>					
+                            <hr class="w-100 bg-primary">
+                        </div>
+                        <ul class="list list-hand">
+                            <li> All functions of the Single Account</li>
+                            <li> Access to dossiers, forecasts, studies</li>
+                        </ul>
+                    </div>
+                    <div class="box-footer bg-lightest min-h-80 l-h-60">
+                        <p class="text-center fs-36"> <small class="fs-16 fw-300">starting at</small> $700 <small class="fs-16 fw-300">/ month*</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <p class="fs-12 text-end">
+                    *All products require an annual contract. Prices do not include sales tax.
+                </p>
+            </div>
+            <div class="col-12 text-center">
+                <a href="#" class="btn btn-warning">Go to product overview</a>
+            </div>
+        </div>						
+    </div>
+</section>
+
+<section class="py-50" data-aos="fade-up">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-12 text-center">
+                <h1 class="mb-15">Reviews & Ratings</h1>				
+                <hr class="w-100 bg-primary">
+            </div>
+        </div>
+        <div class="row mt-30">				
+            <div class="col-md-3 col-12">
+                <div class="box pull-up">
+                    <div class="box-body">
+                        <div>
+                            <div class="d-flex align-items-center mb-30">
+                                <div class="me-15">
+                                    <img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/avatar/1.jpg" class="avatar avatar-lg rounded10" alt="">
+                                </div>
+                                <div class="d-flex flex-column fw-500">
+                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Johen Kothari</a>
+                                    <span class="text-fade fs-12">Software Engineer</span>
+                                </div>
+                            </div>
+                            <p class="mb-25 min-h-120">A great aspect of this course is the student mentors. These people are always there to help, support, and motivate the student to complete modules...</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <i class="me-15 fa fa-linkedin-square"></i>
+                                    <span>Detailed Review</span>									
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="box pull-up">
+                    <div class="box-body">
+                        <div>
+                            <div class="d-flex align-items-center mb-30">
+                                <div class="me-15">
+                                    <img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/avatar/2.jpg" class="avatar avatar-lg rounded10" alt="">
+                                </div>
+                                <div class="d-flex flex-column fw-500">
+                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Johen doe</a>
+                                    <span class="text-fade fs-12">Vice President</span>
+                                </div>
+                            </div>
+                            <p class="mb-25 min-h-120">This course actually helped me move from being a general manager to vice president. The content was exciting. I actually implemented what I learnt through case...</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <i class="me-15 fa fa-linkedin-square"></i>
+                                    <span>Detailed Review</span>									
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="box pull-up">
+                    <div class="box-body">
+                        <div>
+                            <div class="d-flex align-items-center mb-30">
+                                <div class="me-15">
+                                    <img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/avatar/3.jpg" class="avatar avatar-lg rounded10" alt="">
+                                </div>
+                                <div class="d-flex flex-column fw-500">
+                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Anshu Srivastav</a>
+                                    <span class="text-fade fs-12">Research Assistant</span>
+                                </div>
+                            </div>
+                            <p class="mb-25 min-h-120">Group case studies really give a sense of teamwork, as it happens in regular classroom studies. It teaches us coordination and right attitude as a team...</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <i class="me-15 fa fa-linkedin-square"></i>
+                                    <span>Detailed Review</span>									
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="box pull-up">
+                    <div class="box-body">
+                        <div>
+                            <div class="d-flex align-items-center mb-30">
+                                <div class="me-15">
+                                    <img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/avatar/4.jpg" class="avatar avatar-lg rounded10" alt="">
+                                </div>
+                                <div class="d-flex flex-column fw-500">
+                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Mical Doe</a>
+                                    <span class="text-fade fs-12">Analyst</span>
+                                </div>
+                            </div>
+                            <p class="mb-25 min-h-120">It doesn’t matter what your previous working background is, as everything is taught from the basics.</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <i class="me-15 fa fa-linkedin-square"></i>
+                                    <span>Detailed Review</span>									
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+            <div class="col-md-3 col-12">
+                <div class="box pull-up">
+                    <div class="box-body">
+                        <div>
+                            <div class="d-flex align-items-center mb-30">
+                                <div class="me-15">
+                                    <img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/avatar/5.jpg" class="avatar avatar-lg rounded10" alt="">
+                                </div>
+                                <div class="d-flex flex-column fw-500">
+                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Paton don</a>
+                                    <span class="text-fade fs-12">Data Analyst</span>
+                                </div>
+                            </div>
+                            <p class="mb-25 min-h-120">They will prepare you how to face Data Science job interviews along with this upGrad will also provide mock interviews and mock MCQ tests to check...</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <i class="me-15 fa fa-linkedin-square"></i>
+                                    <span>Detailed Review</span>									
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="box pull-up">
+                    <div class="box-body">
+                        <div>
+                            <div class="d-flex align-items-center mb-30">
+                                <div class="me-15">
+                                    <img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/avatar/6.jpg" class="avatar avatar-lg rounded10" alt="">
+                                </div>
+                                <div class="d-flex flex-column fw-500">
+                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Johen Doe</a>
+                                    <span class="text-fade fs-12">Samsung</span>
+                                </div>
+                            </div>
+                            <p class="mb-25 min-h-120">Many of the basic concepts are being taught to build good intuition of Machine Learning models. Most of the basic math required for developing an intuition...</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <i class="me-15 fa fa-linkedin-square"></i>
+                                    <span>Detailed Review</span>									
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="box pull-up">
+                    <div class="box-body">
+                        <div>
+                            <div class="d-flex align-items-center mb-30">
+                                <div class="me-15">
+                                    <img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/avatar/7.jpg" class="avatar avatar-lg rounded10" alt="">
+                                </div>
+                                <div class="d-flex flex-column fw-500">
+                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Moriss Kothari</a>
+                                    <span class="text-fade fs-12">Software Engineer</span>
+                                </div>
+                            </div>
+                            <p class="mb-25 min-h-120">You will be notified of any interview opportunities in ML and they will share your profile with the recruiters. This really helps to kick start your...</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <i class="me-15 fa fa-linkedin-square"></i>
+                                    <span>Detailed Review</span>									
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="box pull-up">
+                    <div class="box-body">
+                        <div>
+                            <div class="d-flex align-items-center mb-30">
+                                <div class="me-15">
+                                    <img src="http://crypto-admin-templates.multipurposethemes.com/sass/bs5/images/front-end-img/avatar/8.jpg" class="avatar avatar-lg rounded10" alt="">
+                                </div>
+                                <div class="d-flex flex-column fw-500">
+                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Johens Kothari</a>
+                                    <span class="text-fade fs-12">Software Engineer</span>
+                                </div>
+                            </div>
+                            <p class="mb-25 min-h-120">The course justifies every penny charged and is an investment that reaps benefits once we enter the market after course completion.</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#">
+                                    <i class="me-15 fa fa-linkedin-square"></i>
+                                    <span>Detailed Review</span>									
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-50 bg-white" data-aos="fade-up">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-12 text-center">
+                <h1 class="mb-15">Get in touch with us.<br>We are happy to help.</h1>				
+                <hr class="w-100 bg-primary">
+            </div>
+        </div>
+        <div class="row justify-content-center mt-30">
+            <div class="col-lg-6 col-12">   
+                <form>
+                    <div class="contact-form form-border clearfix">
+                        <div class="form-group">
+                            <input id="name" type="text" placeholder="Name*" class="form-control" name="name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email*" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Phone*" class="form-control" name="phone">
+                        </div>
+                        <div class="form-group textarea">
+                            <textarea class="form-control input-message" placeholder="Comment*" rows="7" name="message"></textarea>
+                        </div>
+                        <div class="form-group submit-button">
+                            <button id="submit" name="submit" type="submit" value="Send" class="btn btn-primary"> Send your message </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

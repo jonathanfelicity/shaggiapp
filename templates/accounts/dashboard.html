@@ -1,0 +1,533 @@
+{% extends 'accounts/layout.html' %}
+
+
+
+{% block main %}
+<div class="content-wrapper">
+    <div class="container-full">
+      <!-- Main content -->
+      <section class="content">			
+          <div class="row">
+              <div class="col-xl-4 col-12">
+                  <div class="box">
+                      <div class="box-header">
+                          <h4 class="box-title">Markets : ETH / PLN</h4>
+                      </div>
+                      <div class="box-body px-0 pb-0">
+                          <div class="d-flex align-items-center justify-content-between px-15">
+                              <div class="lookup lookup-circle lookup-right">
+                                <input type="text" name="s">
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-primary active btn-sm">PLN</button>
+                                <button type="button" class="btn btn-primary btn-sm">EUR</button>
+                                <button type="button" class="btn btn-primary btn-sm">USD</button>
+                                <button type="button" class="btn btn-primary btn-sm">BTC</button>
+                              </div>
+                          </div>
+                          <div class="table-responsive">
+                            <table id="example1" class="table table-striped no-border no-margin">
+                                <thead>
+                                   <tr>
+                                      <th>Name</th>
+                                      <th>Price</th>
+                                      <th>Change</th>
+                                      <th></th>
+                                   </tr>
+                                </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td><i class="fs-16 me-5 cc BTC" title="BTC"></i> BTC</td>
+                                       <td><p class="no-margin text-fade">2351.00</p></td>
+                                       <td class="no-wrap"><span class="text-success"><i class="fa fa-caret-up"></i> 1.85%</span></td>
+                                       <td class="text-center"><i class="fa fa-star text-primary"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fs-16 me-5 cc ETH" title="ETH"></i> ETH</td>
+                                       <td><p class="no-margin text-fade">2350.00</p></td>
+                                       <td class="no-wrap"><span class="text-success"><i class="fa fa-caret-up"></i> 0.85%</span></td>
+                                       <td class="text-center"><i class="fa fa-star text-primary"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fs-16 me-5 cc LBC" title="LBC"></i> LBC</td>
+                                       <td><p class="no-margin text-fade">1405.00</p></td>
+                                       <td class="no-wrap"><span class="text-danger"><i class="fa fa-caret-down"></i> 1.85%</span></td>
+                                       <td class="text-center"><i class="fa fa-star"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fs-16 me-5 cc DASH" title="DASH"></i> DASH</td>
+                                       <td><p class="no-margin text-fade">4125.00</p></td>
+                                       <td class="no-wrap"><span class="text-success"><i class="fa fa-caret-up"></i> 1.05%</span></td>
+                                       <td class="text-center"><i class="fa fa-star"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fs-16 me-5 cc XRP" title="XRP"></i> XRP</td>
+                                       <td><p class="no-margin text-fade">4157.00</p></td>
+                                       <td class="no-wrap"><span class="text-danger"><i class="fa fa-caret-down"></i> 0.05%</span></td>
+                                       <td class="text-center"><i class="fa fa-star"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fs-16 me-5 cc DAO" title="DAO"></i> DAO</td>
+                                       <td><p class="no-margin text-fade">4152.00</p></td>
+                                       <td class="no-wrap"><span class="text-danger"><i class="fa fa-caret-down"></i> 0.09%</span></td>
+                                       <td class="text-center"><i class="fa fa-star"></i></td>
+                                    </tr>
+                                  </tbody>
+                            </table>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="box-header">
+                          <h4 class="box-title">My Orders</h4>
+                      </div>
+                      <div class="box-body py-0 px-10">
+                          <div class="table-responsive">
+                            <table class="table table-border no-margin">
+                                <thead>
+                                   <tr>
+                                      <th></th>
+                                      <th>Rate</th>
+                                      <th>Amount ETH</th>
+                                      <th class="text-nowrap">Price PLN</th>
+                                      <th></th>
+                                   </tr>
+                                </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td><i class="fa fa-stop-circle"></i></td>
+                                       <td><span class="text-success">0.029521.00</span></td>
+                                       <td>29.42154871</td>
+                                       <td>2.154</td>
+                                       <td><i class="fa fa-close"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fa fa-caret-up"></i></td>
+                                       <td><span class="text-success">0.029521.00</span></td>
+                                       <td>29.42154871</td>
+                                       <td>2.154</td>
+                                       <td><i class="fa fa-close"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fa fa-stop-circle"></i></td>
+                                       <td><span class="text-success">0.029521.00</span></td>
+                                       <td>29.42154871</td>
+                                       <td>2.154</td>
+                                       <td><i class="fa fa-close"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fa fa-caret-up"></i></td>
+                                       <td><span class="text-success">0.029521.00</span></td>
+                                       <td>29.42154871</td>
+                                       <td>2.154</td>
+                                       <td><i class="fa fa-close"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fa fa-stop-circle"></i></td>
+                                       <td><span class="text-danger">0.029521.00</span></td>
+                                       <td>29.42154871</td>
+                                       <td>2.154</td>
+                                       <td><i class="fa fa-close"></i></td>
+                                    </tr>
+                                    <tr>
+                                       <td><i class="fa fa-caret-up"></i></td>
+                                       <td><span class="text-danger">0.029521.00</span></td>
+                                       <td>29.42154871</td>
+                                       <td>2.154</td>
+                                       <td><i class="fa fa-close"></i></td>
+                                    </tr> 
+                                  </tbody>
+                            </table>
+                          </div>
+                          <div class="d-flex my-20 justify-content-center gap-items-3">
+                              <p class="mb-0"><i class="me-10 fa fa-caret-up"></i> Limit Offer</p>
+                              <p class="mb-0"><i class="me-10 fa fa-stop-circle"></i> Stop Offer</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-8 col-12">
+                  <div class="box">
+                      <div class="box-header">
+                          <div class="d-lg-flex justify-content-between align-items-center d-inline-block">
+                              <h4 class="my-0 text-fade"><i class="cc BTC" title="BTC"></i><span class="text-dark">BTC</span>USD Perpetual</h4>
+                              <div class="d-lg-block d-none">
+                                  <hr class="h-50 m-0" style="width: 1px;">
+                              </div>
+                              <div class="text-end">
+                                  <h5>$9,125.<span class="text-fade">00 USD</span></h5>
+                                  <p class="mb-5 text-danger">-12.04 <i class="fa fa-arrow-down"></i></p>
+                              </div>
+                              <div class="d-lg-block d-none">
+                                  <hr class="h-50 m-0" style="width: 1px;">
+                              </div>
+                              <div class="d-lg-block d-none">
+                                  <p class="mb-5 text-fade">High</p>
+                                  <h5>9,124.<span class="text-fade">00 USD</span></h5>
+                              </div>
+                              <div class="d-lg-block d-none">
+                                  <hr class="h-50 m-0" style="width: 1px;">
+                              </div>
+                              <div class="d-lg-block d-none">
+                                  <p class="mb-5 text-fade">Low</p>
+                                  <h5>4,124.<span class="text-fade">00 USD</span></h5>
+                              </div>
+                              <div class="d-lg-block d-none">
+                                  <hr class="h-50  m-0" style="width: 1px;">
+                              </div>
+                              <div class="d-lg-block d-none">
+                                  <p class="mb-5 text-fade">24H Volume</p>
+                                  <h5>2,124.12<span class="text-fade">125 BTC</span></h5>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="box-body p-5">
+                          <div id="bitcoin-stock" class="mb-15"></div>
+                      </div>
+                  </div>
+                  <div class="box">
+                      <div class="box-body">
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-pills">
+                              <li class="nav-item"> <a href="#navpills-1" class="nav-link active" data-bs-toggle="tab" aria-expanded="false">Market Order</a> </li>
+                              <li class="nav-item"> <a href="#navpills-2" class="nav-link" data-bs-toggle="tab" aria-expanded="false">Limit Order</a> </li>
+                              <li class="nav-item"> <a href="#navpills-3" class="nav-link" data-bs-toggle="tab" aria-expanded="true">Stop Market</a> </li>
+                          </ul>	
+                          <!-- Tab panes -->
+                          <div class="tab-content bg-lightest p-20 mt-20">
+                              <div id="navpills-1" class="tab-pane active">	
+                                  <div class="row">
+                                      <div class="col-xl-6 col-12">
+                                          <div class="d-flex justify-content-between">
+                                            <h4>Quick Buy</h4>
+                                          </div>
+
+                                          <form class="dash-form">
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I want to buy</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="1.00000000" maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I will pay:</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                              </div>
+                                              <button type="submit" class="btn btn-success btn-block">Buy</button>
+                                          </form>							
+                                      </div>
+                                      <div class="col-xl-6 col-12">
+                                          <div class="d-flex justify-content-between">
+                                            <h4>QuickSell</h4>
+                                          </div>
+                                          <form class="dash-form">
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I want to sell</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="1.00000000" maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I want receive:</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                              </div>
+                                              <button type="submit" class="btn btn-danger btn-block">Sell</button>
+                                          </form>							
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="navpills-2" class="tab-pane">
+                                  <div class="row">
+                                      <div class="col-xl-6 col-12">
+                                          <div class="d-flex justify-content-between">
+                                            <h4>Quick Buy</h4>
+                                          </div>
+
+                                          <form class="dash-form">
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I want to buy</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="1.00000000" maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I will pay:</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                              </div>
+                                              <button type="submit" class="btn btn-success btn-block">Buy</button>
+                                          </form>							
+                                      </div>
+                                      <div class="col-xl-6 col-12">
+                                          <div class="d-flex justify-content-between">
+                                            <h4>QuickSell</h4>
+                                          </div>
+                                          <form class="dash-form">
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I want to sell</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="1.00000000" maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I want receive:</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                              </div>
+                                              <button type="submit" class="btn btn-danger btn-block">Sell</button>
+                                          </form>							
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="navpills-3" class="tab-pane">
+                                  <div class="row">
+                                      <div class="col-xl-6 col-12">
+                                          <div class="d-flex justify-content-between">
+                                            <h4>Quick Buy</h4>
+                                          </div>
+
+                                          <form class="dash-form">
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I want to buy</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="1.00000000" maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I will pay:</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                              </div>
+                                              <button type="submit" class="btn btn-success btn-block">Buy</button>
+                                          </form>							
+                                      </div>
+                                      <div class="col-xl-6 col-12">
+                                          <div class="d-flex justify-content-between">
+                                            <h4>QuickSell</h4>
+                                          </div>
+                                          <form class="dash-form">
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I want to sell</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="1.00000000" maxlength="25">
+                                                    <span class="currency">ETH</span>
+                                                </div>
+                                              </div>
+                                              <div class="form-group row">
+                                                <label class="col-md-4 col-form-label text-nowrap pr-10">I want receive:</label>
+                                                <div class="col-md-8">
+                                                  <input class="form-control" type="text" value="0.03240000" maxlength="25">
+                                                    <span class="currency">PLN</span>
+                                                </div>
+                                              </div>
+                                              <button type="submit" class="btn btn-danger btn-block">Sell</button>
+                                          </form>							
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>																	
+                      </div>
+                      <!-- /.box-body -->
+                    </div>
+              </div>
+              <div class="col-xl-5 col-12">
+                <div class="box">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">Latest Transactions</h4>
+                      <ul class="box-controls pull-right">
+                        <li><a class="box-btn-fullscreen" href="#"></a></li>
+                      </ul>
+                  </div>
+                  <div class="box-body px-15 pt-0 pb-10">
+                      <div class="table-responsive">
+                          <table class="table no-border mb-0">
+                            <thead>					
+                              <tr class="bg-pale-dark">
+                                <th>#</th>
+                                <th>BTC</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href="#" class="text-yellow hover-warning">
+                                    9d2c7b06bfa0
+                                  </a>
+                                </td>
+                                <td class="text-nowrap">1.2126281 BTC</td>
+                                <td>
+                                  <time class="timeago text-nowrap" datetime="2018-02-01T13:38:01Z" title="2018-02-01 13:38 GMT">2m ago</time>
+                                </td>
+                                <td><span class="label label-success">Confirmed</span></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href="#" class="text-yellow hover-warning">
+                                    5de67415bfc6
+                                  </a>
+                                </td>
+                                <td class="text-nowrap">0.20522881 BTC</td>
+                                <td>
+                                  <time class="timeago text-nowrap" datetime="2018-02-01T13:38:01Z" title="2018-02-01 13:38 GMT">2m ago</time>
+                                </td>
+                                <td><span class="label label-warning">Unconfirmed</span></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href="#" class="text-yellow hover-warning">
+                                    733de15b3cec
+                                  </a>
+                                </td>
+                                <td class="text-nowrap">2.02622033 BTC</td>
+                                <td>
+                                  <time class="timeago text-nowrap" datetime="2018-02-01T13:38:01Z" title="2018-02-01 13:38 GMT">2m ago</time>
+                                </td>
+                                <td><span class="label label-success">Confirmed</span></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href="#" class="text-yellow hover-warning">
+                                    6793bcfa4f7f
+                                  </a>
+                                </td>
+                                <td class="text-nowrap">2.43220578 BTC</td>
+                                <td>
+                                  <time class="timeago text-nowrap" datetime="2018-02-01T13:38:00Z" title="2018-02-01 13:38 GMT">2m ago</time>
+                                </td>
+                                <td><span class="label label-danger">Canceled</span></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href="#" class="text-yellow hover-warning">
+                                    2c66087936b5
+                                  </a>
+                                </td>
+                                <td class="text-nowrap">14.01099978 BTC</td>
+                                <td>
+                                  <time class="timeago text-nowrap" datetime="2018-02-01T13:38:00Z" title="2018-02-01 13:38 GMT">2m ago</time>
+                                </td>
+                                <td><span class="label label-danger">Canceled</span></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href="#" class="text-yellow hover-warning">
+                                    51935e53c294
+                                  </a>
+                                </td>
+                                <td class="text-nowrap">0.3024534 BTC</td>
+                                <td>
+                                  <time class="timeago text-nowrap" datetime="2018-02-01T13:38:00Z" title="2018-02-01 13:38 GMT">2m ago</time>
+                                </td>
+                                <td><span class="label label-warning">Unconfirmed</span></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <a href="#" class="text-yellow hover-warning">
+                                    a3976b73cf5e
+                                  </a>
+                                </td>
+                                <td class="text-nowrap">0.20518486 BTC</td>
+                                <td>
+                                  <time class="timeago text-nowrap" datetime="2018-02-01T13:37:59Z" title="2018-02-01 13:37 GMT">2m ago</time>
+                                </td>
+                                <td><span class="label label-success">Confirmed</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-7 col-12">
+                  <div class="row">
+                      <div class="col-lg-6 col-12">
+                          <div class="box">
+                              <div class="box-header">
+                                  <h4 class="box-title">Sell</h4>
+                                  <div class="box-controls pull-right">
+                                      Total: 409.2820
+                                  </div>
+                              </div>
+                              <div class="box-body p-0">
+                                  <div class="table-responsive buy-sall-table">
+                                      <table class="table table-hover mb-0">
+                                          <thead>							  	
+                                              <tr>
+                                                  <th width="25%" class="text-nowrap">Pri./ BTC</th>
+                                                  <th>BTC Amount</th>
+                                                  <th>Total: (USD)</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr><td>82.3</td> <td><i class="cc BTC fs-14 me-5"></i> 0.15</td><td>$ 134.7</td></tr>
+                                              <tr><td>82.4</td> <td><i class="cc BTC fs-14 me-5"></i> 2.66</td><td>$ 238.3</td></tr>
+                                              <tr><td>82.5</td> <td><i class="cc BTC fs-14 me-5"></i> 0.32</td><td>$ 288.6</td></tr>
+                                              <tr><td>84.0</td> <td><i class="cc BTC fs-14 me-5"></i> 0.10</td><td>$ 878.4</td></tr>
+                                              <tr><td>95.0</td> <td><i class="cc BTC fs-14 me-5"></i> 0.10</td><td>$ 958.6</td></tr>
+                                              <tr><td>95.9</td> <td><i class="cc BTC fs-14 me-5"></i> 0.30</td><td>$ 270.4</td></tr>
+                                              <tr><td>97.0</td> <td><i class="cc BTC fs-14 me-5"></i> 0.00</td><td>$ 30.2</td></tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                              </div>
+                          </div>	
+                      </div>
+                      <div class="col-lg-6 col-12">
+                          <div class="box">
+                              <div class="box-header">
+                                  <h4 class="box-title">Buy </h4>
+                                  <div class="box-controls pull-right">
+                                      Total: 406.00
+                                  </div>
+                              </div>
+                              <div class="box-body p-0">
+                                  <div class="table-responsive buy-sall-table">
+                                      <table class="table table-hover mb-0">
+                                          <thead>							  	
+                                              <tr>
+                                                  <th width="25%" class="text-nowrap">Pri./ BTC</th>
+                                                  <th>BTC Amount</th>
+                                                  <th>Total: (USD)</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr><td>82.3</td> <td><i class="cc BTC fs-14 me-5"></i> 0.15</td><td>$ 134.7</td></tr>
+                                              <tr><td>82.4</td> <td><i class="cc BTC fs-14 me-5"></i> 2.66</td><td>$ 234.3</td></tr>
+                                              <tr><td>82.5</td> <td><i class="cc BTC fs-14 me-5"></i> 0.32</td><td>$ 288.6</td></tr>
+                                              <tr><td>84.0</td> <td><i class="cc BTC fs-14 me-5"></i> 0.10</td><td>$ 878.4</td></tr>
+                                              <tr><td>95.0</td> <td><i class="cc BTC fs-14 me-5"></i> 0.10</td><td>$ 958.6</td></tr>
+                                              <tr><td>95.9</td> <td><i class="cc BTC fs-14 me-5"></i> 0.30</td><td>$ 270.4</td></tr>
+                                              <tr><td>97.0</td> <td><i class="cc BTC fs-14 me-5"></i> 0.00</td><td>$ 30.2</td></tr>
+                                          </tbody>							
+                                      </table>
+                                  </div>
+                              </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- /.content -->
+    </div>
+</div>
+{% endblock main %}

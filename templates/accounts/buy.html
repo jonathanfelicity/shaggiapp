@@ -1,0 +1,294 @@
+{% extends 'accounts/layout.html' %}
+{% block main %}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <div class="container-full">
+      <!-- Content Header (Page header) -->	  
+      <div class="content-header">
+          <div class="d-flex align-items-center">
+              <div class="me-auto">
+                  <h4 class="page-title">Currency Exchange</h4>
+                  <div class="d-inline-block align-items-center">
+                      <nav>
+                          <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Currency Exchange</li>
+                          </ol>
+                      </nav>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+
+      <!-- Main content -->
+      <section class="content">			
+            <div class="row">
+              <div class="col-12">
+                  <div class="box">
+                      <div class="box-body">
+                          <h1 class="page-header text-center no-border fw-600 fs-60 mt-25"><span class="text-primary">Buy</span> and <span class="text-danger">Sell</span> Coins at the<br> Crypto without additional fees</h1>
+                          <h3 class="subtitle text-center">Buy now and get +30% extra bonus Minimum pre-sale<br> amount 50 Crypto Coin. We accept BTC crypto-currency.</h3>
+                          <div class="row">
+                              <div class="col-12">
+                                  <div class="exchange-calculator text-center mt-35">
+                                      <input type="text" class="form-control" name="coins-exchange" placeholder="" value="10.1548">                
+                                      <select class="coins-exchange" name="state">
+                                         <option value="BTC">BTC</option>
+                                         <option value="BTC">Ethereum</option>
+                                         <option value="Ripple">Ripple</option>
+                                         <option value="Ripple">Bitcoin Cash</option>
+                                         <option value="Ripple">Cardano</option>
+                                         <option value="Ripple">Litecoin</option>
+                                         <option value="Ripple">NEO</option>
+                                         <option value="Ripple">Stellar</option>
+                                         <option value="Ripple">EOS</option>
+                                         <option value="Ripple">NEM</option>
+                                      </select>
+                                      <div class="equal"> = </div>
+                                      <input type="text" class="form-control" name="money-exchange" placeholder="" value="125.158">                
+                                      <select class="money-exchange" name="state">
+                                         <option value="USD">USD</option>
+                                         <option value="EURO">EURO</option>
+                                      </select>
+                                 </div>
+                                 <div class="text-center mt-15 mb-25">
+                                      <a href="#" class="btn btn-primary mx-auto">EXCHANGE NOW</a>
+                                 </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-3 col-md-6">
+                  <div class="box pull-up">
+                    <div class="box-body">
+                        <div class="media align-items-center p-0">
+                          <div class="text-center">
+                            <a href="#"><i class="cc BTC me-5" title="BTC"></i></a>
+                          </div>
+                          <div>
+                            <h3 class="no-margin text-bold">Bitcoin BTC</h3>
+                          </div>
+                        </div>
+                        <div class="flexbox align-items-center mt-5">
+                          <div>
+                            <p class="no-margin fw-600"><span class="text-primary">0.00000434 </span>BTC<span class="text-info">$0.04</span></p>
+                          </div>
+                          <div class="text-end">
+                            <p class="no-margin fw-600"><span class="text-success">+1.35%</span></p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="box-footer p-0 no-border">
+                      <div class="chart"><canvas id="chartjs1" class="h-80"></canvas></div>
+                  </div>
+               </div>
+            </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="box pull-up">
+                    <div class="box-body">
+                        <div class="media align-items-center p-0">
+                          <div class="text-center">
+                            <a href="#"><i class="cc LTC me-5" title="LTC"></i></a>
+                          </div>
+                          <div>
+                            <h3 class="no-margin text-bold">Litecoin LTC</h3>
+                          </div>
+                        </div>
+                        <div class="flexbox align-items-center mt-5">
+                          <div>
+                            <p class="no-margin fw-600"><span class="text-primary">0.00000434 </span>LTC<span class="text-info">$0.04</span></p>
+                          </div>
+                          <div class="text-end">
+                            <p class="no-margin fw-600"><span class="text-danger">-1.35%</span></p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="box-footer p-0 no-border">
+                      <div class="chart"><canvas id="chartjs2" class="h-80"></canvas></div>
+                  </div>
+               </div>
+            </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="box pull-up">
+                    <div class="box-body">
+                        <div class="media align-items-center p-0">
+                          <div class="text-center">
+                            <a href="#"><i class="cc NEO me-5" title="NEO"></i></a>
+                          </div>
+                          <div>
+                            <h3 class="no-margin text-bold">Neo NEO</h3>
+                          </div>
+                        </div>
+                        <div class="flexbox align-items-center mt-5">
+                          <div>
+                            <p class="no-margin fw-600"><span class="text-primary">0.00000434 </span>NEO<span class="text-info">$0.04</span></p>
+                          </div>
+                          <div class="text-end">
+                            <p class="no-margin fw-600"><span class="text-danger">-1.35%</span></p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="box-footer p-0 no-border">
+                      <div class="chart"><canvas id="chartjs3" class="h-80"></canvas></div>
+                  </div>
+               </div>
+            </div>
+              <div class="col-lg-3 col-md-6">
+                  <div class="box pull-up">
+                    <div class="box-body">
+                        <div class="media align-items-center p-0">
+                          <div class="text-center">
+                            <a href="#"><i class="cc DASH me-5" title="DASH"></i></a>
+                          </div>
+                          <div>
+                            <h3 class="no-margin text-bold">Dash DASH</h3>
+                          </div>
+                        </div>
+                        <div class="flexbox align-items-center mt-5">
+                          <div>
+                            <p class="no-margin fw-600"><span class="text-primary">0.00000434 </span>DASH<span class="text-info">$0.04</span></p>
+                          </div>
+                          <div class="text-end">
+                            <p class="no-margin fw-600"><span class="text-success">+1.35%</span></p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="box-footer p-0 no-border">
+                      <div class="chart"><canvas id="chartjs4" class="h-80"></canvas></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+          <div class="row mt-30">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="box box-body pull-up">
+                <div class="media align-items-center p-0">
+                  <div class="text-center">
+                    <a href="#"><i class="cc BTC me-5" title="BTC"></i></a>
+                  </div>
+                  <div>
+                    <h3 class="no-margin">Bitcoin BTC</h3>
+                  </div>
+                </div>
+                <div class="flexbox align-items-center mt-25">
+                  <div>
+                    <p class="no-margin">2.340000434 <span class="text-gray">BTC</span> <span class="text-info">$0.04</span></p>
+                  </div>
+                  <div class="text-end">
+                    <p class="no-margin"><span class="text-success">+5.35%</span></p>
+                  </div>
+                </div>
+              </div>			
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="box box-body pull-up">
+                <div class="media align-items-center p-0">
+                  <div class="text-center">
+                    <a href="#"><i class="cc LTC me-5" title="LTC"></i></a>
+                  </div>
+                  <div>
+                    <h3 class="no-margin">Litecoin LTC</h3>
+                  </div>
+                </div>
+                <div class="flexbox align-items-center mt-25">
+                  <div>
+                    <p class="no-margin">1.34000434 <span class="text-gray">LTC</span> <span class="text-info">$0.14</span></p>
+                  </div>
+                  <div class="text-end">
+                    <p class="no-margin"><span class="text-danger">-2.35%</span></p>
+                  </div>
+                </div>
+              </div>			
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="box box-body pull-up">
+                <div class="media align-items-center p-0">
+                  <div class="text-center">
+                    <a href="#"><i class="cc NEO me-5" title="NEO"></i></a>
+                  </div>
+                  <div>
+                    <h3 class="no-margin">Neo NEO</h3>
+                  </div>
+                </div>
+                <div class="flexbox align-items-center mt-25">
+                  <div>
+                    <p class="no-margin">0.30000434 <span class="text-gray">NEO</span> <span class="text-info">$5.04</span></p>
+                  </div>
+                  <div class="text-end">
+                    <p class="no-margin"><span class="text-success">+4.35%</span></p>
+                  </div>
+                </div>
+              </div>			
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="box box-body pull-up">
+                <div class="media align-items-center p-0">
+                  <div class="text-center">
+                    <a href="#"><i class="cc DASH me-5" title="DASH"></i></a>
+                  </div>
+                  <div>
+                    <h3 class="no-margin">Dash DASH</h3>
+                  </div>
+                </div>
+                <div class="flexbox align-items-center mt-25">
+                  <div>
+                    <p class="no-margin">0.34000434 <span class="text-gray">DASH</span> <span class="text-info">$0.54</span></p>
+                  </div>
+                  <div class="text-end">
+                    <p class="no-margin"><span class="text-danger">-5.35%</span></p>
+                  </div>
+                </div>
+              </div>			
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="box box-body pull-up">
+                <div class="media align-items-center p-0">
+                  <div class="text-center">
+                    <a href="#"><i class="cc ETH me-5" title="ETH"></i></a>
+                  </div>
+                  <div>
+                    <h3 class="no-margin">Ethereum ETH</h3>
+                  </div>
+                </div>
+                <div class="flexbox align-items-center mt-25">
+                  <div>
+                    <p class="no-margin">0.12300434 <span class="text-gray">ETH</span> <span class="text-info">$0.12</span></p>
+                  </div>
+                  <div class="text-end">
+                    <p class="no-margin"><span class="text-success">+0.35%</span></p>
+                  </div>
+                </div>
+              </div>			
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="box box-body pull-up">
+                <div class="media align-items-center p-0">
+                  <div class="text-center">
+                    <a href="#"><i class="cc XRP me-5" title="XRP"></i></a>
+                  </div>
+                  <div>
+                    <h3 class="no-margin">Ripple XRP</h3>
+                  </div>
+                </div>
+                <div class="flexbox align-items-center mt-25">
+                  <div>
+                    <p class="no-margin">0.00000434 <span class="text-gray">XRP</span> <span class="text-info">$0.04</span></p>
+                  </div>
+                  <div class="text-end">
+                    <p class="no-margin"><span class="text-danger">-1.35%</span></p>
+                  </div>
+                </div>
+              </div>			
+            </div>
+
+          </div>
+      </section>
+      <!-- /.content -->
+    
+    </div>
+</div>
+{% endblock main %}
